@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -260,6 +260,25 @@
   .recs strong { display: block; font-size: 1.05rem; margin-bottom: .15rem; }
   .recs span { color: var(--muted); font-size: .96rem; }
 
+
+  /* Speak up */
+  .speak { background: var(--accent-soft); }
+  .step { display: grid; grid-template-columns: 2.6rem 1fr; gap: .9rem; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.15rem; margin-top: 1rem; }
+  .step > div { min-width: 0; }
+  .step-num { width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-family: var(--serif); font-weight: 700; display: grid; place-items: center; }
+  .step h3 { margin: .35rem 0 .6rem; }
+  .step p { font-size: .98rem; }
+  button.pill { font: inherit; font-weight: 700; font-size: .95rem; cursor: pointer; border: 2px solid var(--accent); }
+  button.pill.alt { background: transparent; }
+  button.pill[hidden] { display: none; }
+  .msg { margin-top: 1rem; border-top: 1px dashed var(--line); padding-top: .4rem; }
+  .msg summary { cursor: pointer; font-weight: 700; color: var(--accent); min-height: 44px; display: flex; align-items: center; }
+  .msg-to { font-size: .92rem; margin: .4rem 0 .6rem; overflow-wrap: anywhere; }
+  .msg pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--sans); font-size: .92rem; line-height: 1.5; background: var(--surface-2); border-radius: 10px; padding: .9rem; margin: 0 0 .75rem; }
+  .fine { font-size: .88rem !important; color: var(--muted); margin: .9rem 0 0; }
+  .copied { font-size: .9rem; color: var(--muted); margin: .5rem 0 0; min-height: 1.2em; }
+  .no-js .js-only { display: none; }
+
   /* About + footer */
   .about { background: var(--surface-2); }
   .about p { font-size: 1.05rem; }
@@ -289,6 +308,7 @@
         <li><a href="#students">What students said</a></li>
         <li><a href="#benefits">Who benefits?</a></li>
         <li><a href="#change">What should change</a></li>
+        <li><a class="help" href="#speak-up">Speak up</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
@@ -656,6 +676,67 @@
         <li><strong>Resources on race and culture, not just weight</strong><span>Skin color, height, hair, and cultural expectations shape body image too.</span></li>
         <li><strong>A body image workshop or group open to all genders</strong><span>A space where any student can talk about this with others.</span></li>
       </ol>
+      <p style="margin-top:1.5rem"><a class="btn btn-primary" href="#speak-up">Ask UMD for this &rarr;</a></p>
+    </div>
+  </section>
+
+
+  <!-- 9b. Speak up -->
+  <section id="speak-up" class="speak" aria-labelledby="speak-h">
+    <div class="wrap narrow">
+      <p class="kicker">Speak up</p>
+      <h2 id="speak-h">Want UMD to make this change? Tell them.</h2>
+      <p>It takes one minute. Tap below and a ready-to-send email opens, addressed to the Counseling Center Student Advisory Board. The Counseling Center says it welcomes student input on its services. Change anything you like before you hit send.</p>
+
+      <div class="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <div>
+          <h3>Send the email</h3>
+          <div class="actions">
+            <a class="pill" href="mailto:mhsab@umd.edu?subject=Please%20update%20UMD%27s%20body%20image%20support%20page&amp;body=Hi%2C%0D%0A%0D%0AI%27m%20a%20UMD%20student%2C%20and%20I%27m%20writing%20to%20ask%20the%20Counseling%20Center%20to%20update%20its%20body%20image%20page%3A%0D%0Ahttps%3A%2F%2Fcounseling.umd.edu%2Fresources%2Fstudents%2Feating-and-body-image-concerns%0D%0A%0D%0AIn%20a%20student%20project%20with%2075%2B%20UMD%20students%2C%2063%25%20didn%27t%20know%20the%20Counseling%20Center%20offers%20body%20image%20support.%20Right%20now%20the%20page%20lists%20a%20support%20group%20for%20women%20only%2C%20and%20it%20links%20to%20a%20national%20organization%20that%20no%20longer%20offers%20a%20phone%20helpline.%0D%0A%0D%0APlease%20consider%3A%0D%0A1.%20Clearly%20listing%20support%20for%20all%20genders%0D%0A2.%20Listing%20helplines%20that%20are%20working%20today%0D%0A3.%20Adding%20resources%20on%20race%20and%20culture%2C%20not%20just%20weight%0D%0A4.%20Offering%20a%20body%20image%20workshop%20or%20group%20open%20to%20all%20genders%0D%0A%0D%0AHere%20is%20a%20student-made%20example%20of%20what%20this%20could%20look%20like%3A%0D%0Ahttps%3A%2F%2Faysinghal.github.io%2Fumd-body-image%2F%0D%0A%0D%0AThank%20you%20for%20the%20work%20you%20do%20for%20students.%0D%0A%0D%0AA%20UMD%20student">Open in my email app</a>
+            <a class="pill alt" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mhsab%40umd.edu&amp;su=Please%20update%20UMD%27s%20body%20image%20support%20page&amp;body=Hi%2C%0A%0AI%27m%20a%20UMD%20student%2C%20and%20I%27m%20writing%20to%20ask%20the%20Counseling%20Center%20to%20update%20its%20body%20image%20page%3A%0Ahttps%3A%2F%2Fcounseling.umd.edu%2Fresources%2Fstudents%2Feating-and-body-image-concerns%0A%0AIn%20a%20student%20project%20with%2075%2B%20UMD%20students%2C%2063%25%20didn%27t%20know%20the%20Counseling%20Center%20offers%20body%20image%20support.%20Right%20now%20the%20page%20lists%20a%20support%20group%20for%20women%20only%2C%20and%20it%20links%20to%20a%20national%20organization%20that%20no%20longer%20offers%20a%20phone%20helpline.%0A%0APlease%20consider%3A%0A1.%20Clearly%20listing%20support%20for%20all%20genders%0A2.%20Listing%20helplines%20that%20are%20working%20today%0A3.%20Adding%20resources%20on%20race%20and%20culture%2C%20not%20just%20weight%0A4.%20Offering%20a%20body%20image%20workshop%20or%20group%20open%20to%20all%20genders%0A%0AHere%20is%20a%20student-made%20example%20of%20what%20this%20could%20look%20like%3A%0Ahttps%3A%2F%2Faysinghal.github.io%2Fumd-body-image%2F%0A%0AThank%20you%20for%20the%20work%20you%20do%20for%20students.%0A%0AA%20UMD%20student" target="_blank" rel="noopener">Open in Gmail / TerpMail</a>
+          </div>
+          <details class="msg">
+            <summary>Read or copy the message</summary>
+            <p class="msg-to"><strong>To:</strong> <a href="mailto:mhsab@umd.edu">mhsab@umd.edu</a><br><strong>Subject:</strong> Please update UMD&#x27;s body image support page</p>
+            <pre id="msg-text">Hi,
+
+I&#x27;m a UMD student, and I&#x27;m writing to ask the Counseling Center to update its body image page:
+https://counseling.umd.edu/resources/students/eating-and-body-image-concerns
+
+In a student project with 75+ UMD students, 63% didn&#x27;t know the Counseling Center offers body image support. Right now the page lists a support group for women only, and it links to a national organization that no longer offers a phone helpline.
+
+Please consider:
+1. Clearly listing support for all genders
+2. Listing helplines that are working today
+3. Adding resources on race and culture, not just weight
+4. Offering a body image workshop or group open to all genders
+
+Here is a student-made example of what this could look like:
+https://aysinghal.github.io/umd-body-image/
+
+Thank you for the work you do for students.
+
+A UMD student</pre>
+            <button type="button" class="pill alt js-only" data-copy="msg-text">Copy message</button>
+          </details>
+          <p class="fine">Sending from your UMD email shows it&rsquo;s coming from a student. Your email goes straight from you to UMD &mdash; this site never sees it.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <div>
+          <h3>Pass it on</h3>
+          <p>Hey &mdash; if you want this too, send one yourself and share this with a friend. One email is easy to miss. Fifty is not.</p>
+          <div class="actions">
+            <button type="button" class="pill js-share" hidden>Share this</button>
+            <a class="pill alt" href="sms:?&amp;body=I%20just%20emailed%20UMD%20asking%20for%20a%20body%20image%20support%20page%20that%20covers%20all%20genders%20and%20cultures.%20It%20takes%201%20minute.%20Send%20one%20too%20if%20you%20want%20this%3A%20https%3A%2F%2Faysinghal.github.io%2Fumd-body-image%2F%23speak-up">Text a friend</a>
+            <button type="button" class="pill alt js-only" data-copy-text="I just emailed UMD asking for a body image support page that covers all genders and cultures. It takes 1 minute. Send one too if you want this: https://aysinghal.github.io/umd-body-image/#speak-up">Copy link</button>
+          </div>
+          <p class="copied" role="status" aria-live="polite"></p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -682,6 +763,7 @@
       <li><a href="https://counseling.umd.edu/aboutus/faqs">Counseling Center &ndash; FAQs</a></li>
       <li><a href="https://counseling.umd.edu/get-help-now">Counseling Center &ndash; Get Help Now</a></li>
       <li><a href="https://counseling.umd.edu/resources/students/eating-and-body-image-concerns">Counseling Center &ndash; Body Image page</a></li>
+      <li><a href="https://counseling.umd.edu/aboutus/get-involved">Counseling Center &ndash; Get Involved (Student Advisory Board contact)</a></li>
       <li><a href="https://go.umd.edu/CCscheduling">Counseling Center &ndash; Schedule a Brief Assessment</a></li>
       <li><a href="https://health.umd.edu/nutrition">University Health Center &ndash; Nutrition Services</a></li>
       <li><a href="https://www.allianceforeatingdisorders.com/">National Alliance for Eating Disorders</a></li>
@@ -701,5 +783,30 @@
     <p>A WGSS 290 student project. Not affiliated with or endorsed by the University of Maryland. <a class="to-top" href="#top">Back to top &uarr;</a></p>
   </div>
 </footer>
+<script>
+document.documentElement.classList.remove("no-js");
+(function () {
+  var status = document.querySelector(".copied");
+  function say(t) { if (status) { status.textContent = t; setTimeout(function () { status.textContent = ""; }, 3500); } }
+  function copy(text, done) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { say(done); }, function () { say("Couldn\u2019t copy. Select the text and copy it by hand."); });
+    } else { say("Select the text and copy it by hand."); }
+  }
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    b.addEventListener("click", function () { copy(document.getElementById(b.getAttribute("data-copy")).textContent, "Message copied."); });
+  });
+  document.querySelectorAll("[data-copy-text]").forEach(function (b) {
+    b.addEventListener("click", function () { copy(b.getAttribute("data-copy-text"), "Link copied. Paste it to a friend."); });
+  });
+  var share = document.querySelector(".js-share");
+  if (share && navigator.share) {
+    share.hidden = false;
+    share.addEventListener("click", function () {
+      navigator.share({ title: "Ask UMD for better body image support", text: "I just emailed UMD asking for a body image support page that covers all genders and cultures. It takes 1 minute. Send one too if you want this:", url: "https://aysinghal.github.io/umd-body-image/#speak-up" }).catch(function () {});
+    });
+  }
+})();
+</script>
 </body>
 </html>
